@@ -10,7 +10,7 @@ namespace estudos_dotnet_one.Models
         private string _nome;  
         private int _idade;      
         public string Nome { 
-            get =>_nome.ToUpper();
+            get =>char.ToUpper(_nome[0]) + _nome.Substring(1);
             set
             {
                 if(value ==""){
@@ -20,6 +20,9 @@ namespace estudos_dotnet_one.Models
                 _nome = value;
             }
         }
+
+        public string Sobrenome { get; set; }
+        public string NomeCompleto => $"{Nome} {char.ToUpper(Sobrenome[0]) + Sobrenome.Substring(1)}";
         public int Idade { 
             get => _idade; 
             set{
@@ -32,7 +35,7 @@ namespace estudos_dotnet_one.Models
             }
 
         public void Apresentar(){
-            Console.WriteLine($"nome: {Nome}, idade: {Idade}");
+            Console.WriteLine($"nome: {NomeCompleto}, idade: {Idade}");
         }
     }
 }
