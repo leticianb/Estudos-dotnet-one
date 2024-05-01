@@ -17,5 +17,14 @@ namespace estudos_dotnet_one.Models
             int quantidade = Alunos.Count;
             return quantidade;
         }
+        public bool RemoverAluno(Pessoa aluno){
+            return Alunos.Remove(aluno);//retorna true or false e remove o aluno
+        }
+        public void ListarAlunos(){
+            Console.WriteLine($"Alunos do curso:");
+            foreach(Pessoa aluno in Alunos){
+                Console.WriteLine($"-{aluno.NomeCompleto}");
+            }
+        }
     }
 }

@@ -2,5 +2,16 @@
 Pessoa p1 = new Pessoa();
 p1.Nome = "leticia";
 p1.Sobrenome = "nakahara";
-p1.Idade = 19;
-p1.Apresentar();
+// p1.Idade = 19;
+// p1.Apresentar();
+
+Pessoa p2 = new Pessoa();
+p2.Nome = "Luize";
+p2.Sobrenome = "Yuki";
+Curso cursoDeIngles = new Curso();
+cursoDeIngles.Nome = "Curso de Inglês";
+cursoDeIngles.Alunos = new List<Pessoa>();
+cursoDeIngles.AdicionarAluno(p1);
+cursoDeIngles.AdicionarAluno(p2);
+cursoDeIngles.ListarAlunos();
+
