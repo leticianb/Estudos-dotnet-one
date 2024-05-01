@@ -1,0 +1,5 @@
+C:\Projetos\estudos-dotnet-one\obj\Debug\net8.0\estudos-dotnet-one.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\estudos-dotnet-one\obj\Debug\net8.0\estudos-dotnet-one.AssemblyInfoInputs.cache
+C:\Projetos\estudos-dotnet-one\obj\Debug\net8.0\estudos-dotnet-one.AssemblyInfo.cs
+C:\Projetos\estudos-dotnet-one\obj\Debug\net8.0\estudos-dotnet-one.csproj.CoreCompileInputs.cache
+C:\Projetos\estudos-dotnet-one\obj\Debug\net8.0\estudos-dotnet-one.sourcelink.json
