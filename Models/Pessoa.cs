@@ -7,14 +7,13 @@ namespace estudos_dotnet_one.Models
 {
     public class Pessoa
     {
-        private string _nome;//o unico que consegue modificar é a classe
-        public string Nome 
-        { 
-            get => return _nome.ToUpper();
-            
-            set{
+        private string _nome;        
+        public string Nome { 
+            get =>_nome.();
+            set
+            {
                 if(value ==""){
-                    throw new ArgumentException("O nome não pode ser vazio");
+                    throw new ArgumentException("não pode vazio");
 
                 }
                 _nome = value;
