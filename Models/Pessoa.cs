@@ -7,6 +7,14 @@ namespace estudos_dotnet_one.Models
 {
     public class Pessoa
     {
+        public Pessoa()
+        {
+
+        }
+        public Pessoa(string nome, string sobrenome){//construtor pessoa
+            Nome = nome;
+            Sobrenome = sobrenome;
+        }
         private string _nome;  
         private int _idade;      
         public string Nome { 
@@ -14,7 +22,7 @@ namespace estudos_dotnet_one.Models
             set
             {
                 if(value ==""){
-                    throw new ArgumentException("não pode vazio");
+                    throw new ArgumentException("não pode ser vazio");
 
                 }
                 _nome = value;

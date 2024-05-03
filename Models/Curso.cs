@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 
 namespace estudos_dotnet_one.Models
@@ -21,10 +22,20 @@ namespace estudos_dotnet_one.Models
             return Alunos.Remove(aluno);//retorna true or false e remove o aluno
         }
         public void ListarAlunos(){
-            Console.WriteLine($"Alunos do curso:");
-            foreach(Pessoa aluno in Alunos){
-                Console.WriteLine($"-{aluno.NomeCompleto}");
+            Console.WriteLine($"Alunos do {Nome}:");
+            for(int count=0; count <Alunos.Count; count++){
+                //string texto = "Número " + count +" - "+ Alunos[count].NomeCompleto;
+                string texto = $"Número {count+1} - {Alunos[count].NomeCompleto}";
+                Console.WriteLine(texto);
+
             }
+
+            // foreach(Pessoa aluno in Alunos){
+            //     Console.WriteLine($"-{aluno.NomeCompleto}");
+            // }
         }
     }
 }
+
+// decimal ValorMonetario = 42.23M;
+// Console.WriteLine($"{ValorMonetario:C}");
