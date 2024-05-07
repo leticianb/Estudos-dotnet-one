@@ -27,7 +27,7 @@ namespace estudos_dotnet_one.Models
                 //string texto = "Número " + count +" - "+ Alunos[count].NomeCompleto;
                 string texto = $"Número {count+1} - {Alunos[count].NomeCompleto}";
                 Console.WriteLine(texto);
-
+                
             }
 
             // foreach(Pessoa aluno in Alunos){
