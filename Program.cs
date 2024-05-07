@@ -17,7 +17,7 @@ cursoDeIngles.AdicionarAluno(p1);
 cursoDeIngles.AdicionarAluno(p2);
 cursoDeIngles.ListarAlunos();
 
-string[] linhas = File.ReadAllLines("Arquivos/arquivosLeitura.txt");
+string[] linhas = File.ReadAllLines("Arquivos/arquivoLeitura.txt");
 foreach(string linha in linhas){
     Console.WriteLine(linha);
 }
