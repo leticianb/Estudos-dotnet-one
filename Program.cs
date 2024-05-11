@@ -94,9 +94,9 @@ ValueTuple<int, string, string, decimal> outratupla = (1, "leticia", "nakahara",
 var outroexemplo = Tuple.Create(1, "leticia", "nakahara", 50000M); 
 
 LeituraArquivo arquivo = new LeituraArquivo();
-var (sucesso, linhasarquivo, quantidadelinhas) = arquivo.LerArquivo("Arquivos/arquivoLeitura.txt");//var serve para n precisar passar o tipo
+var (sucesso, linhasarquivo, _) = arquivo.LerArquivo("Arquivos/arquivoLeitura.txt");//var serve para n precisar passar o tipoo e _ na informação q n precisa
 if(sucesso){
-    Console.WriteLine("Quantidade linhas arquivo " + quantidadelinhas);
+    // Console.WriteLine("Quantidade linhas arquivo " + quantidadelinhas);
     foreach(string linha in linhasarquivo){
         Console.WriteLine(linha);
     }
@@ -105,3 +105,12 @@ if(sucesso){
 else{
     Console.WriteLine("Não foi possivel");
 }
+
+// Pessoa p3 = new Pessoa("Let", "Nakahara");
+// (string nome, string sobrenome) = p3;
+// Console.WriteLine($"{nome} {sobrenome}");
+
+int n=20;
+bool ehPar = false;
+ehPar = n%2==0;
+Console.WriteLine($"O número {n} é " + (ehPar ? "par" : "ímpar"));//if ternário

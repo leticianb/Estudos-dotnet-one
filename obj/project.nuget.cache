@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "dnl9cYJFT1d41EqSKdqeug+BAKvETIc1Pz6sTxrCpcxGY1r6O/hJDDDiuru+uadd7hPLCj/aiVmSC943prmQ4Q==",
+  "dgSpecHash": "XgCHNY8rexBls+J5NjZDoH1mUOakx9qCZFYlogz4E4J4fohyLcnTwRAXo9UlXnH+IjQFD7jjf4oloGmxcJDAqw==",
   "success": true,
   "projectFilePath": "C:\\Projetos\\estudos-dotnet-one\\estudos-dotnet-one.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\letic\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
