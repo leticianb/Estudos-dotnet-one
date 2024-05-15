@@ -1,4 +1,5 @@
 ﻿using estudos_dotnet_one.Models;
+using Newtonsoft.Json;
 Pessoa p1 = new Pessoa(nome:"leticia", sobrenome: "nakahara");
 // p1.Nome = "leticia";
 // p1.Sobrenome = "nakahara";
@@ -114,3 +115,7 @@ int n=20;
 bool ehPar = false;
 ehPar = n%2==0;
 Console.WriteLine($"O número {n} é " + (ehPar ? "par" : "ímpar"));//if ternário
+Vendas v1 = new Vendas(1, "Material", 25.00M);
+string serializado = JsonConvert.SerializeObject(v1, Formatting.Indented);
+File.WriteAllText("Arquivos/vendas.json", serializado);
+Console.WriteLine(serializado);

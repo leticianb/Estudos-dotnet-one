@@ -13,3 +13,6 @@ C:\Projetos\estudos-dotnet-one\obj\Debug\net8.0\refint\estudos-dotnet-one.dll
 C:\Projetos\estudos-dotnet-one\obj\Debug\net8.0\estudos-dotnet-one.pdb
 C:\Projetos\estudos-dotnet-one\obj\Debug\net8.0\estudos-dotnet-one.genruntimeconfig.cache
 C:\Projetos\estudos-dotnet-one\obj\Debug\net8.0\ref\estudos-dotnet-one.dll
+C:\Projetos\estudos-dotnet-one\obj\Debug\net8.0\estudos-dotnet-one.csproj.AssemblyReference.cache
+C:\Projetos\estudos-dotnet-one\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Projetos\estudos-dotnet-one\obj\Debug\net8.0\estudos-.3AA1B6F6.Up2Date
