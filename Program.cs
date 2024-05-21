@@ -111,11 +111,26 @@ else{
 // (string nome, string sobrenome) = p3;
 // Console.WriteLine($"{nome} {sobrenome}");
 
+//deserializar o Json - cria a classe para represenar o conteudo
+// string conteudo = File.ReadAllText("Arquivos/vendas.json");
+// List<Venda> listvenda = JsonConvert.DeserializeObject<List<Venda>>(conteudo);
+// foreach(Venda venda in listavenda){
+//     Console.WriteLine(venda.Id, venda.Produto, venda.Preco, venda.DataVenda.ToString("dd/MM/aaaa HH:mm"));
+// }
+DateTime dataAtual = DateTime.Now;
+
+
+List<Vendas> listavendas = new List<Vendas>();
 int n=20;
 bool ehPar = false;
 ehPar = n%2==0;
 Console.WriteLine($"O número {n} é " + (ehPar ? "par" : "ímpar"));//if ternário
-Vendas v1 = new Vendas(1, "Material", 25.00M);
-string serializado = JsonConvert.SerializeObject(v1, Formatting.Indented);
+Vendas v1 = new Vendas(1, "Material", 25.00M, dataAtual);
+Vendas v2 = new Vendas(2, "Software", 110.00M, dataAtual);
+
+listavendas.Add(v1);
+listavendas.Add(v2);
+
+string serializado = JsonConvert.SerializeObject(listavendas, Formatting.Indented);
 File.WriteAllText("Arquivos/vendas.json", serializado);
 Console.WriteLine(serializado);
